@@ -2,7 +2,7 @@ import { Ed25519Keypair, PaginatedObjectsResponse, PaginationArguments, Secp256k
 import { NFT, SuiObjectIdType } from '../types/sui';
 import { Pool, Position, PositionReward } from '../modules/resourcesModule';
 import { TickData } from '../types/clmmpool';
-import SDK from '../main';
+import SDK from '../index';
 export declare function toDecimalsAmount(amount: number | string, decimals: number | string): number;
 export declare function asUintN(int: bigint, bits?: number): string;
 export declare function asIntN(int: bigint, bits?: number): number;

@@ -11,7 +11,7 @@ export declare const GAS_SYMBOL = "SUI";
 export declare const DEFAULT_NFT_TRANSFER_GAS_FEE = 450;
 export declare const SUI_SYSTEM_STATE_OBJECT_ID = "0x0000000000000000000000000000000000000005";
 export declare class CoinAssist {
-    static getCoinTypeArg(obj: SuiMoveObject): string | null;
+    static getCoinTypeArg(obj: SuiMoveObject): string;
     static isSUI(obj: SuiMoveObject): boolean;
     static getCoinSymbol(coinTypeArg: string): string;
     static getBalance(obj: SuiMoveObject): bigint;

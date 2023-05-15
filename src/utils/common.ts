@@ -28,7 +28,7 @@ import { Pool, Position, Rewarder, PositionReward, PositionStatus } from '../mod
 import { extractStructTagFromType } from './contracts'
 import { TickData } from '../types/clmmpool'
 import { d, decimalsMultiplier } from './numbers'
-import SDK from '../main'
+import SDK from '../index'
 
 export function toDecimalsAmount(amount: number | string, decimals: number | string): number {
   const mul = decimalsMultiplier(d(decimals))

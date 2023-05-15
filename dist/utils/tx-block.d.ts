@@ -16,7 +16,7 @@ export declare class TxBlock {
     moveCall(target: string, typeArguments?: string[], args?: any[]): ({
         kind: "Input";
         index: number;
-        type?: "object" | "pure" | undefined;
+        type?: "object" | "pure";
         value?: any;
     } | {
         kind: "GasCoin";
@@ -30,7 +30,7 @@ export declare class TxBlock {
     }) & ({
         kind: "Input";
         index: number;
-        type?: "object" | "pure" | undefined;
+        type?: "object" | "pure";
         value?: any;
     } | {
         kind: "GasCoin";
@@ -45,19 +45,19 @@ export declare class TxBlock {
     address(value: string): {
         kind: "Input";
         index: number;
-        type?: "object" | "pure" | undefined;
+        type?: "object" | "pure";
         value?: any;
     };
     pure(value: any): {
         kind: "Input";
         index: number;
-        type?: "object" | "pure" | undefined;
+        type?: "object" | "pure";
         value?: any;
     };
     object(value: string): {
         kind: "Input";
         index: number;
-        type?: "object" | "pure" | undefined;
+        type?: "object" | "pure";
         value?: any;
     };
     setGasBudget(gasBudget: number): void;
@@ -78,7 +78,7 @@ export declare class TxBlock {
     makeMoveVec(args: SuiTxArg[], type?: SuiInputTypes): ({
         kind: "Input";
         index: number;
-        type?: "object" | "pure" | undefined;
+        type?: "object" | "pure";
         value?: any;
     } | {
         kind: "GasCoin";
@@ -92,7 +92,7 @@ export declare class TxBlock {
     }) & ({
         kind: "Input";
         index: number;
-        type?: "object" | "pure" | undefined;
+        type?: "object" | "pure";
         value?: any;
     } | {
         kind: "GasCoin";

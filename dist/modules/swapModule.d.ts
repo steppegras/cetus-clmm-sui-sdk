@@ -81,7 +81,7 @@ export declare class SwapModule implements IModule {
         amount: string;
         aToB: boolean;
         byAmountIn: boolean;
-    } | null>;
+    }>;
     preswap(params: PreSwapParams): Promise<{
         poolAddress: string;
         currentSqrtPrice: number;
@@ -93,7 +93,7 @@ export declare class SwapModule implements IModule {
         amount: string;
         aToB: boolean;
         byAmountIn: boolean;
-    } | null>;
+    }>;
     private transformSwapData;
     private transformSwapWithMultiPoolData;
     calculateRates(params: CalculateRatesParams): CalculateRatesResult;

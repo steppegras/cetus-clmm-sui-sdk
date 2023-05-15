@@ -22,7 +22,7 @@ export declare class RewarderModule implements IModule {
     emissionsEveryDay(poolObjectId: string): Promise<{
         emissions: number;
         coin_address: string;
-    }[] | null>;
+    }[]>;
     updatePoolRewarder(poolObjectId: string, currentTime: BN): Promise<Pool>;
     posRewardersAmount(poolObjectId: string, positionHandle: string, positionId: string): Promise<RewarderAmountOwed[]>;
     poolRewardersAmount(account: string, poolObjectId: string): Promise<BN[]>;
