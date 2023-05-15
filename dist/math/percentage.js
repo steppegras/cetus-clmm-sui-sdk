@@ -3,6 +3,8 @@ import BN from 'bn.js';
  * Percentage - the util set for percentage struct.
  */
 export class Percentage {
+    numerator;
+    denominator;
     constructor(numerator, denominator) {
         this.toString = () => {
             return `${this.numerator.toString()}/${this.denominator.toString()}`;

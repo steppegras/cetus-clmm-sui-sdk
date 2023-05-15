@@ -2,6 +2,7 @@
 import { normalizeSuiObjectId, TransactionBlock } from '@mysten/sui.js';
 import { getDefaultSuiInputType } from '../types/sui';
 export class TxBlock {
+    txBlock;
     constructor() {
         this.txBlock = new TransactionBlock();
     }

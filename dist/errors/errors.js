@@ -32,6 +32,8 @@ export var PoolErrorCode;
     PoolErrorCode["InvalidCoinTypeSequence"] = "InvalidCoinTypeSequence";
 })(PoolErrorCode || (PoolErrorCode = {}));
 export class ClmmpoolsError extends Error {
+    message;
+    errorCode;
     constructor(message, errorCode) {
         super(message);
         this.message = message;

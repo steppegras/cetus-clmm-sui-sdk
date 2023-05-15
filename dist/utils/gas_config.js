@@ -1,13 +1,13 @@
 import { d } from './numbers';
 class GasConfig {
+    price = 1;
+    GasBudgetLow = 60_000_000;
+    GasBudgetMiddle = 75_000_000;
+    GasBudgetMiddle2 = 90_000_000;
+    GasBudgetHigh = 105_000_000;
+    GasBudgetHigh2 = 240_000_000;
+    GasBudgetHigh3 = 800_000_000;
     constructor(price = 1) {
-        this.price = 1;
-        this.GasBudgetLow = 60000000;
-        this.GasBudgetMiddle = 75000000;
-        this.GasBudgetMiddle2 = 90000000;
-        this.GasBudgetHigh = 105000000;
-        this.GasBudgetHigh2 = 240000000;
-        this.GasBudgetHigh3 = 800000000;
         this.price = price;
         this.GasBudgetLow = Number(d(this.GasBudgetLow).mul(this.price).toFixed(0));
         this.GasBudgetMiddle = Number(d(this.GasBudgetMiddle).mul(this.price).toFixed(0));

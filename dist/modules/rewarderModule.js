@@ -8,6 +8,8 @@ import { ClmmIntegratePoolModule, CLOCK_ADDRESS } from '../types/sui';
 import { getRewardInTickRange } from '../utils/tick';
 import { MathUtil, ONE, ZERO } from '../math/utils';
 export class RewarderModule {
+    _sdk;
+    growthGlobal;
     constructor(sdk) {
         this._sdk = sdk;
         this.growthGlobal = [ZERO, ZERO, ZERO];

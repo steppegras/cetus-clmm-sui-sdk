@@ -1,5 +1,5 @@
 export const LaunchpadRouterModule = 'router';
-export const CONST_DENOMINATOR = 1000000000;
+export const CONST_DENOMINATOR = 1_000_000_000;
 export var LaunchpadPoolActivityState;
 (function (LaunchpadPoolActivityState) {
     LaunchpadPoolActivityState["Upcoming"] = "Upcoming";

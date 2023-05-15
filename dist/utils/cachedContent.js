@@ -1,4 +1,6 @@
 export class CachedContent {
+    overdueTime;
+    value;
     constructor(value, overdueTime = 0) {
         this.overdueTime = overdueTime;
         this.value = value;

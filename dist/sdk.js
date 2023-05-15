@@ -12,8 +12,22 @@ import { TokenModule } from './modules/tokenModule';
 import { XCetusModule } from './modules/xcetusModule';
 import GasConfig from './utils/gas_config';
 export class SDK {
+    _fullClient;
+    _pool;
+    _position;
+    _swap;
+    _resources;
+    _rewarder;
+    _router;
+    _token;
+    _sdkOptions;
+    _launchpad;
+    _xcetusModule;
+    _boosterModule;
+    _makerModule;
+    _senderAddress = '';
+    _gasConfig;
     constructor(options) {
-        this._senderAddress = '';
         this._sdkOptions = options;
         this._fullClient = new JsonRpcProvider(new Connection({
             fullnode: options.fullRpcUrl,

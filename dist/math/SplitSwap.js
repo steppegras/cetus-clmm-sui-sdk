@@ -188,6 +188,13 @@ function computeSplitSwap(a2b, byAmountIn, amounts, poolData, swapTicks) {
     return splitSwapResult;
 }
 export class SplitSwap {
+    minSplitUnit;
+    amountArray;
+    byAmountIn;
+    a2b;
+    clmmpool;
+    ticks;
+    splitSwapResult;
     constructor(amount, unit, clmmpool, a2b, byAmountIn, tickData) {
         this.minSplitUnit = unit;
         this.a2b = a2b;

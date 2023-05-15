@@ -5,6 +5,7 @@ import { asUintN, buildPositionReward, buildTickData, buildTickDataByEvent, mult
 import { extractStructTagFromType, isSortedSymbols } from '../utils/contracts';
 import { ClmmFetcherModule, ClmmIntegratePoolModule, CLOCK_ADDRESS } from '../types/sui';
 export class PoolModule {
+    _sdk;
     constructor(sdk) {
         this._sdk = sdk;
     }

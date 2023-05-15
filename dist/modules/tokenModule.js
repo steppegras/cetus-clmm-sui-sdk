@@ -10,8 +10,9 @@ function getFutureTime(interval) {
     return Date.parse(new Date().toString()) + interval;
 }
 export class TokenModule {
+    _sdk;
+    _cache = {};
     constructor(sdk) {
-        this._cache = {};
         this._sdk = sdk;
     }
     get sdk() {

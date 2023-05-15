@@ -3,6 +3,7 @@ import { asUintN } from '../utils';
 import { findAdjustCoin, TransactionUtil } from '../utils/transaction-util';
 import { ClmmIntegratePoolModule, CLOCK_ADDRESS } from '../types/sui';
 export class PositionModule {
+    _sdk;
     constructor(sdk) {
         this._sdk = sdk;
     }

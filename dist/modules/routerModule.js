@@ -9,6 +9,18 @@ function _pairSymbol(base, quote) {
     };
 }
 export class RouterModule {
+    graph;
+    pathProviders;
+    coinProviders;
+    _coinAddressMap;
+    poolAddressMap;
+    poolMap;
+    ticksMap;
+    leastRefreshTime;
+    createTxParams;
+    poolDirectionMap;
+    isInited;
+    _sdk;
     constructor(sdk) {
         this.pathProviders = [];
         this.coinProviders = {

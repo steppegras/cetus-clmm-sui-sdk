@@ -12,8 +12,9 @@ import { TickMath } from '../math/tick';
 export const AMM_SWAP_MODULE = 'amm_swap';
 export const POOL_STRUCT = 'Pool';
 export class SwapModule {
+    _sdk;
+    _cache = {};
     constructor(sdk) {
-        this._cache = {};
         this._sdk = sdk;
     }
     get sdk() {
